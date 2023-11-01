@@ -1,0 +1,42 @@
+*{
+    text-decoration: none;
+}
+.index{
+    background: url(lebron_cristiano.jpg) no-repeat;
+    min-height: 100vh;
+    background-position: center;
+    background-size: cover;
+}
+.cristiano{
+    background: url(cristiano.jpg) no-repeat;
+    min-height: 100vh;
+    background-size: cover;
+    background-position: center;
+}
+.lebron{
+    background: url(lebron.jpg) no-repeat;
+    min-height: 100vh;
+    background-size: cover;
+    background-position: center;
+}
+.navbar a{
+    color: white;
+    position: relative;
+    font-size: 20px;
+    font-weight: 500;
+    
+}
+.header{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 20px 100px;
+    display: flex;
+    justify-content: first baseline;
+    align-items: center;
+    z-index: 100;
+}
+img{
+    padding-top: 50px;
+}
