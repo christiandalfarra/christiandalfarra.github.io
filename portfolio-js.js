@@ -11,12 +11,12 @@ const projects = [
     },
     {
         id: 2,
-        title: "Computer Vision Research",
-        category: "AI Research",
+        title: "Computer Vision Project",
+        category: "CV / Image Processing",
         year: "2023",
         description: "A novel approach to object detection that improves accuracy in low-light conditions, reducing computational requirements by 35%.",
         technologies: ["TensorFlow", "Python", "OpenCV"],
-        image: "https://via.placeholder.com/800x500"
+        image: "icons/ai.png"
     },
     {
         id: 3,
@@ -25,16 +25,7 @@ const projects = [
         year: "2023",
         description: "A multilingual sentiment analysis tool that works across 12 languages with state-of-the-art accuracy for academic text analysis.",
         technologies: ["BERT", "Hugging Face", "Flask"],
-        image: "https://via.placeholder.com/800x500"
-    },
-    {
-        id: 4,
-        title: "Reinforcement Learning Environment",
-        category: "AI Research",
-        year: "2022",
-        description: "A custom simulation environment for testing reinforcement learning algorithms in complex multi-agent scenarios.",
-        technologies: ["PyTorch", "OpenAI Gym", "Unity"],
-        image: "https://via.placeholder.com/800x500"
+        image: "icons/ai.png"
     }
 ];
 
