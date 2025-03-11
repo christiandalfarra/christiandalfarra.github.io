@@ -4,28 +4,51 @@ const projects = [
         id: 1,
         title: "Neural Network Visualization",
         category: "Machine Learning",
-        year: "2024",
         description: "An interactive visualization tool for neural networks that helps students understand the inner workings of deep learning models.",
         technologies: ["PyTorch", "React", "D3.js"],
-        image: "icons/ai.png"
+        icon: "icons/ai.png",
+        image: "icons/ai.png",
+        gitrepo: "https://github.com/christiandalfarra/SIVProject"
     },
     {
         id: 2,
         title: "Computer Vision Project",
         category: "CV / Image Processing",
-        year: "2023",
         description: "A novel approach to object detection that improves accuracy in low-light conditions, reducing computational requirements by 35%.",
         technologies: ["TensorFlow", "Python", "OpenCV"],
-        image: "icons/ai.png"
+        icon: "icons/ai.png",
+        image: "icons/ai.png",
+        gitrepo: "https://github.com/christiandalfarra/SIVProject"
     },
     {
         id: 3,
         title: "NLP Sentiment Analyzer",
         category: "Natural Language Processing",
-        year: "2023",
         description: "A multilingual sentiment analysis tool that works across 12 languages with state-of-the-art accuracy for academic text analysis.",
         technologies: ["BERT", "Hugging Face", "Flask"],
-        image: "icons/ai.png"
+        icon: "icons/ai.png",
+        image: "icons/ai.png",
+        gitrepo: "https://github.com/christiandalfarra/SIVProject"
+    },
+    {
+        id: 4,
+        title: "NLP Sentiment Analyzer",
+        category: "Natural Language Processing",
+        description: "A multilingual sentiment analysis tool that works across 12 languages with state-of-the-art accuracy for academic text analysis.",
+        technologies: ["BERT", "Hugging Face", "Flask"],
+        icon: "icons/ai.png",
+        image: "icons/ai.png",
+        gitrepo: "https://github.com/christiandalfarra/SIVProject"
+    },
+    {
+        id: 5,
+        title: "NLP Sentiment Analyzer",
+        category: "Natural Language Processing",
+        description: "A multilingual sentiment analysis tool that works across 12 languages with state-of-the-art accuracy for academic text analysis.",
+        technologies: ["BERT", "Hugging Face", "Flask"],
+        icon: "icons/ai.png",
+        image: "icons/ai.png",
+        gitrepo: "https://github.com/christiandalfarra/SIVProject"
     }
 ];
 
@@ -112,10 +135,10 @@ function renderProjects() {
         projectElement.classList.add('project-item');
         projectElement.innerHTML = `
             <div class="project-image">
-                <img src="${project.image}" alt="${project.title}">
+                <img src="${project.icon}" alt="${project.title}">
             </div>
             <h3 class="project-title">${project.title}</h3>
-            <p class="project-meta">${project.category} / ${project.year}</p>
+            <p class="project-meta">${project.category}</p>
         `;
         
         projectElement.addEventListener('click', () => {
@@ -143,8 +166,8 @@ function openProjectModal(project) {
                 <p>${project.category}</p>
             </div>
             <div>
-                <h5>YEAR</h5>
-                <p>${project.year}</p>
+                <h5>GIT</h5>
+                <p><a href=${project.gitrepo}>GitHub</a></p>
             </div>
             <div>
                 <h5>TECHNOLOGIES</h5>
