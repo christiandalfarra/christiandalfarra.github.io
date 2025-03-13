@@ -17,7 +17,7 @@ const projects = [
         description: "A novel approach to object detection that improves accuracy in low-light conditions, reducing computational requirements by 35%.",
         technologies: ["TensorFlow", "Python", "OpenCV"],
         icon: "icons/ai.png",
-        image: "icons/ai.png",
+        image: "cvimage.jpg",
         gitrepo: "https://github.com/christiandalfarra/SIVProject"
     },
     {
@@ -32,9 +32,9 @@ const projects = [
     },
     {
         id: 4,
-        title: "NLP Sentiment Analyzer",
-        category: "Natural Language Processing",
-        description: "A multilingual sentiment analysis tool that works across 12 languages with state-of-the-art accuracy for academic text analysis.",
+        title: "Progetto 4",
+        category: "da definire",
+        description: "insert description here",
         technologies: ["BERT", "Hugging Face", "Flask"],
         icon: "icons/ai.png",
         image: "icons/ai.png",
@@ -42,9 +42,9 @@ const projects = [
     },
     {
         id: 5,
-        title: "NLP Sentiment Analyzer",
-        category: "Natural Language Processing",
-        description: "A multilingual sentiment analysis tool that works across 12 languages with state-of-the-art accuracy for academic text analysis.",
+        title: "Progetto 5",
+        category: "da definire",
+        description: "inserire descrizione",
         technologies: ["BERT", "Hugging Face", "Flask"],
         icon: "icons/ai.png",
         image: "icons/ai.png",
