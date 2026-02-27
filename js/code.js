@@ -21,14 +21,18 @@ function renderProjects() {
     const projectCardsHTML = projects.map(project => {
         const techTags = project.technologies.map(tech => `<span>${tech}</span>`).join('');
         
-        const demoLink = project.demoUrl 
+        const demoLink = project.demoUrl && project.demoUrl !== "#"
             ? `<a href="${project.demoUrl}" class="demo-link">${project.demoText || 'Demo'}</a>` 
+            : '';
+
+        const githubLink = project.githubUrl && project.githubUrl !== "#"
+            ? `<a href="${project.githubUrl}" class="github-link">GitHub ↗</a>`
             : '';
 
         return `
             <article class="project-card reveal">
                 <div class="project-image">
-                    <div class="placeholder-img"></div>
+                    <div class="placeholder-img" alt="Project thumbnail for ${project.title}"></div>
                 </div>
                 <div class="project-content">
                     <h3>${project.title}</h3>
@@ -37,7 +41,7 @@ function renderProjects() {
                         ${techTags}
                     </div>
                     <div class="project-links">
-                        <a href="${project.githubUrl}" class="github-link">GitHub ↗</a>
+                        ${githubLink}
                         ${demoLink}
                     </div>
                 </div>
@@ -52,4 +56,11 @@ document.addEventListener('DOMContentLoaded', function() {
     renderProjects();
     // Initial reveal check after rendering projects
     reveal();
+
+    const hamburger = document.querySelector('.hamburger');
+    const mainNav = document.querySelector('#main-nav');
+
+    hamburger.addEventListener('click', function() {
+        mainNav.classList.toggle('active');
+    });
 });
