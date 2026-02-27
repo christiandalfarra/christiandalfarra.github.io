@@ -1,102 +1,84 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="it">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>AI Engineer Portfolio | University of Trento</title>
+    <title>Portfolio | AI Engineer & Computer Engineer</title>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;700&family=JetBrains+Mono&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="style.css">
-    <link rel="icon" href="https://assets.codepen.io/4546219/favicon.png" type="image/png">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500&display=swap" rel="stylesheet">
+    <link rel="icon" href="favicon.ico" type="image/x-icon">
+    <script src="js/projects-data.js"></script>
+    <script src="js/code.js"></script>
 </head>
 <body>
-    <!-- Custom cursor -->
-    <div class="custom-cursor"></div>
-
-    <!-- Loading screen -->
-    <div id="loading-screen">
-        <div class="loading-content">
-            <div class="loading-text">Loading Portfolio</div>
-            <div class="loading-bar">
-                <div class="loading-progress"></div>
-            </div>
-        </div>
-    </div>
-
-    <!-- Menu button -->
-    <button id="menu-btn" class="menu-button">Menu</button>
-
-    <!-- Menu overlay -->
-    <div id="menu-overlay" class="menu-overlay">
+    <!-- Navbar  upper navigation bar with name and link to different cards-->
+    <header class="navbar">
+        <div class="logo">CHRISTIAN<span>.ai</span></div>
         <nav>
             <ul>
-                <li><a href="#" class="menu-link" data-target="hero">Home</a></li>
-                <li><a href="#" class="menu-link" data-target="projects">Projects</a></li>
-                <li><a href="#" class="menu-link" data-target="about">About</a></li>
-                <li><a href="#" class="menu-link" data-target="contact">Contact</a></li>
+                <li><a href="#home">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#contact">Contact</a></li>
             </ul>
         </nav>
-    </div>
+    </header>
 
-    <!-- Hero section -->
-    <section id="hero" class="hero-section">
-        <div class="container">
-            <h1>AI Engineering Student<br>University of Trento</h1>
-            <p class="hero-subtitle">Crafting intelligent systems through innovative research and cutting-edge technology bla bla</p>
-            <button id="view-projects-btn" class="primary-button">View Projects</button>
-        </div>
-        <div class="copyright">© 2025</div>
-    </section>
-
-    <!-- Projects section -->
-    <section id="projects" class="projects-section">
-        <div class="container">
-            <h2>Selected Projects</h2>
-            <div class="projects-grid">
-                <!-- Project items will be dynamically inserted here -->
+    <!-- Main content of the page with different sections for home, about, projects and contact -->
+    <main>
+        <section id="home" class="hero">
+            <div class="hero-container">
+                <h2 class="reveal">Ingegnere Informatico | AI Specialist</h2>
+                <h1>Trasformo i <span class="highlight">Dati</span> in <span class="highlight">Intelligenza</span>.</h1>
+                <p>Studente Magistrale in Artificial Intelligence Systems. Specializzato in Machine Learning, Computer Vision e Deep Learning.</p>
+                <div class="hero-btns">
+                    <a href="#projects" class="btn-primary">Vedi Progetti</a>
+                    <a href="docs/cv_Dal_Farra_Christian.pdf" class="btn-secondary" target="_blank">Scarica CV</a>
+                </div>
             </div>
-        </div>
-    </section>
+        </section>
 
-    <!-- About section -->
-    <section id="about" class="about-section">
-        <div class="container">
-            <h2>About</h2>
+        <section id="about" class="section-padding">
+            <h2 class="section-title reveal">Profilo Tecnico</h2>
             <div class="about-grid">
-                <div class="about-image">
-                    <img src="icons/profilo.jpg" alt="Profile">
+                <div class="about-text reveal">
+                    <p>Con una solida base in Ingegneria Informatica, sto approfondendo le frontiere dell'IA. Mi appassiona risolvere problemi complessi attraverso algoritmi ottimizzati e modelli predittivi.</p>
                 </div>
-                <div class="about-content">
-                    <h3>AI Engineering Student</h3>
-                    <p>I'm an AI engineer specializing in neural networks, computer vision, and natural language processing at the University of Trento.</p>
-                    <p>My work focuses on developing interpretable AI systems that bridge the gap between theoretical advancements and practical applications.</p>
-                    <p>With expertise in deep learning architectures and a passion for solving complex problems, I strive to create intelligent systems that enhance human capabilities.</p>
-                    
-                    <div id="contact" class="contact-info">
-                        <h4>Contact</h4>
-                        <p><img src="https://img.icons8.com/officexs/16/gmail-login.png">dalfarrachristian223@gmail.com</p>
-                        <p><a href="https://github.com/christiandalfarra"><img src="https://img.icons8.com/tiny-color/16/github.png">@christiandalfarra</a></p>
-                        <p><a href="https://www.linkedin.com/in/christian-dal-farra/"><img src="https://img.icons8.com/officexs/16/linkedin.png">linkedin</a></p>
-                    </div>
+                <div class="skills-container reveal">
+                    <span class="skill-tag">Python</span>
+                    <span class="skill-tag">PyTorch/TensorFlow</span>
+                    <span class="skill-tag">C++</span>
+                    <span class="skill-tag">Computer Vision</span>
+                    <span class="skill-tag">NLP</span>
+                    <span class="skill-tag">SQL & NoSQL</span>
                 </div>
             </div>
-        </div>
-    </section>
+        </section>
 
-    <!-- Project detail modal -->
-    <div id="project-modal" class="project-modal">
-        <div class="modal-content">
-            <button id="close-modal" class="close-button">✕</button>
-            <div class="modal-image">
-                <!-- Project image will be inserted here -->
+        <section id="projects" class="section-padding">
+            <h2 class="section-title reveal">Progetti Selezionati</h2>
+            
+            <div class="project-grid">
+                <!-- I progetti verranno inseriti qui da JavaScript -->
             </div>
-            <div class="modal-details">
-                <!-- Project details will be inserted here -->
-            </div>
-        </div>
-    </div>
+        </section>
 
-    <script src="portfolio-js.js"></script>
+        <section id="contact" class="section-padding">
+            <div class="contact-card reveal">
+                <h2>Pronto per nuove sfide?</h2>
+                <p>Sono alla ricerca di opportunità in ambito AI Research e Software Engineering.</p>
+                <a href="mailto:dalfarrachristian223@gmail.com" class="email-btn">Invia un messaggio</a>
+                <div class="social-links">
+                    <a href="#">LinkedIn</a>
+                    <a href="#">GitHub</a>
+                    <a href="#">Twitter/X</a>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2026 Christian Dal Farra. Built with Code & Neural Networks.</p>
+    </footer>
 </body>
 </html>
