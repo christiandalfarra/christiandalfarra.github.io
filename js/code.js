@@ -61,6 +61,7 @@ document.addEventListener('DOMContentLoaded', function() {
     const mainNav = document.querySelector('#main-nav');
 
     hamburger.addEventListener('click', function() {
-        mainNav.classList.toggle('active');
+        hamburger.classList.toggle('active');
+        document.body.classList.toggle('menu-open');
     });
 });
